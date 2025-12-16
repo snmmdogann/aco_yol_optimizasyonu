@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68149b1616eb140b5cbe0518aacb234f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_68149b1616eb140b5cbe0518aacb234f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_68149b1616eb140b5cbe0518aacb234f = L.map(
+                "map_68149b1616eb140b5cbe0518aacb234f",
+                {
+                    center: [37.828994269999995, 30.531564299999996],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f88be0270e6e7b640aa42515837e1145 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f88be0270e6e7b640aa42515837e1145.addTo(map_68149b1616eb140b5cbe0518aacb234f);
+        
+    
+            var marker_32dfa54c8a4bfea8a43de342be9bcedb = L.marker(
+                [37.8322874, 30.532964],
+                {
+}
+            ).addTo(map_68149b1616eb140b5cbe0518aacb234f);
+        
+    
+            var icon_91cd79722a00203226a8900162f14573 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5eaebdac60b022b9d2bc1c577aab3d14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c50a73b4c42928def82ffed29c942a8 = $(`<div id="html_5c50a73b4c42928def82ffed29c942a8" style="width: 100.0%; height: 100.0%;">29 Ekim Yüzme Havuzu</div>`)[0];
+                popup_5eaebdac60b022b9d2bc1c577aab3d14.setContent(html_5c50a73b4c42928def82ffed29c942a8);
+            
+        
+
+        marker_32dfa54c8a4bfea8a43de342be9bcedb.bindPopup(popup_5eaebdac60b022b9d2bc1c577aab3d14)
+        ;
+
+        
+    
+    
+                marker_32dfa54c8a4bfea8a43de342be9bcedb.setIcon(icon_91cd79722a00203226a8900162f14573);
+            
+    
+            var marker_f9dc6957c943b7675b2d6064734328e2 = L.marker(
+                [37.827382, 30.54023269999999],
+                {
+}
+            ).addTo(map_68149b1616eb140b5cbe0518aacb234f);
+        
+    
+            var icon_f81f0ea7d8eef2d7aae94222b1424e17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f832579095f6e072b2453b491e45adb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f6fdf295d564ad4c0507e201d01605f = $(`<div id="html_5f6fdf295d564ad4c0507e201d01605f" style="width: 100.0%; height: 100.0%;">Süleyman Demirel Üniversitesi Araştırma Ve Uygulama Hastanesi</div>`)[0];
+                popup_f832579095f6e072b2453b491e45adb3.setContent(html_5f6fdf295d564ad4c0507e201d01605f);
+            
+        
+
+        marker_f9dc6957c943b7675b2d6064734328e2.bindPopup(popup_f832579095f6e072b2453b491e45adb3)
+        ;
+
+        
+    
+    
+                marker_f9dc6957c943b7675b2d6064734328e2.setIcon(icon_f81f0ea7d8eef2d7aae94222b1424e17);
+            
+    
+            var marker_3f57faa28ec027a7e1ce5b9b3d235bf8 = L.marker(
+                [37.8286752, 30.5318182],
+                {
+}
+            ).addTo(map_68149b1616eb140b5cbe0518aacb234f);
+        
+    
+            var icon_b2aa7716564293c4cc20ab70e69b42b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_038e995c93b43c0091d9c83f903620b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_187bd8e2cdb754ef33bc75003cfacaea = $(`<div id="html_187bd8e2cdb754ef33bc75003cfacaea" style="width: 100.0%; height: 100.0%;">Bilgi Merkezi</div>`)[0];
+                popup_038e995c93b43c0091d9c83f903620b0.setContent(html_187bd8e2cdb754ef33bc75003cfacaea);
+            
+        
+
+        marker_3f57faa28ec027a7e1ce5b9b3d235bf8.bindPopup(popup_038e995c93b43c0091d9c83f903620b0)
+        ;
+
+        
+    
+    
+                marker_3f57faa28ec027a7e1ce5b9b3d235bf8.setIcon(icon_b2aa7716564293c4cc20ab70e69b42b9);
+            
+    
+            var marker_5623316b1af79bb602ad165e229f0cdb = L.marker(
+                [37.8254704, 30.528723],
+                {
+}
+            ).addTo(map_68149b1616eb140b5cbe0518aacb234f);
+        
+    
+            var icon_42d0d3b7736cbca08558749d8161ca89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d04d1d306805f012dccae8e12e30eb3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9db6145e794543287960dc9826b8f60 = $(`<div id="html_a9db6145e794543287960dc9826b8f60" style="width: 100.0%; height: 100.0%;">SDÜ Spor Tesisleri</div>`)[0];
+                popup_d04d1d306805f012dccae8e12e30eb3b.setContent(html_a9db6145e794543287960dc9826b8f60);
+            
+        
+
+        marker_5623316b1af79bb602ad165e229f0cdb.bindPopup(popup_d04d1d306805f012dccae8e12e30eb3b)
+        ;
+
+        
+    
+    
+                marker_5623316b1af79bb602ad165e229f0cdb.setIcon(icon_42d0d3b7736cbca08558749d8161ca89);
+            
+    
+            var marker_ca20887e58ba20c8cfa1ddd3226616d6 = L.marker(
+                [37.8321242, 30.5377543],
+                {
+}
+            ).addTo(map_68149b1616eb140b5cbe0518aacb234f);
+        
+    
+            var icon_4f8405f0d51ae3f9b1a6a4120bffdee1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ca9b3b74292da5c0d7866739203cded = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c60c8ee74c171d479e7c5a2806119e46 = $(`<div id="html_c60c8ee74c171d479e7c5a2806119e46" style="width: 100.0%; height: 100.0%;">ISUBÜ Orman Fakültesi</div>`)[0];
+                popup_9ca9b3b74292da5c0d7866739203cded.setContent(html_c60c8ee74c171d479e7c5a2806119e46);
+            
+        
+
+        marker_ca20887e58ba20c8cfa1ddd3226616d6.bindPopup(popup_9ca9b3b74292da5c0d7866739203cded)
+        ;
+
+        
+    
+    
+                marker_ca20887e58ba20c8cfa1ddd3226616d6.setIcon(icon_4f8405f0d51ae3f9b1a6a4120bffdee1);
+            
+    
+            var marker_ebae027d0f9d3425f032e5b5d7950adf = L.marker(
+                [37.8296451, 30.5249068],
+                {
+}
+            ).addTo(map_68149b1616eb140b5cbe0518aacb234f);
+        
+    
+            var icon_5de5dd8b28930317d5050d49ebf0697d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34a8055025678a7bffb31fe283764bb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed8feeded3e67c64ae79724d716c52f9 = $(`<div id="html_ed8feeded3e67c64ae79724d716c52f9" style="width: 100.0%; height: 100.0%;">Lütfü Çakmakçı Kültür Merkezi</div>`)[0];
+                popup_34a8055025678a7bffb31fe283764bb4.setContent(html_ed8feeded3e67c64ae79724d716c52f9);
+            
+        
+
+        marker_ebae027d0f9d3425f032e5b5d7950adf.bindPopup(popup_34a8055025678a7bffb31fe283764bb4)
+        ;
+
+        
+    
+    
+                marker_ebae027d0f9d3425f032e5b5d7950adf.setIcon(icon_5de5dd8b28930317d5050d49ebf0697d);
+            
+    
+            var marker_b02c20802de1122bc7ff841bb15cd0dc = L.marker(
+                [37.8302785, 30.5328373],
+                {
+}
+            ).addTo(map_68149b1616eb140b5cbe0518aacb234f);
+        
+    
+            var icon_105799663ae70f487929b271a0c87d17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a047459c97eaecbd4c6224f65378a12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f6d463590b0c0c1f9b014de86bff3cd = $(`<div id="html_5f6d463590b0c0c1f9b014de86bff3cd" style="width: 100.0%; height: 100.0%;">Fen Edebiyat Fakültesi</div>`)[0];
+                popup_6a047459c97eaecbd4c6224f65378a12.setContent(html_5f6d463590b0c0c1f9b014de86bff3cd);
+            
+        
+
+        marker_b02c20802de1122bc7ff841bb15cd0dc.bindPopup(popup_6a047459c97eaecbd4c6224f65378a12)
+        ;
+
+        
+    
+    
+                marker_b02c20802de1122bc7ff841bb15cd0dc.setIcon(icon_105799663ae70f487929b271a0c87d17);
+            
+    
+            var marker_8fd8a838b02c52a3428996c7f34ee70b = L.marker(
+                [37.8280138, 30.5336276],
+                {
+}
+            ).addTo(map_68149b1616eb140b5cbe0518aacb234f);
+        
+    
+            var icon_c7ac0cdd0d553e0813032811ab79c7ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ef2a8a4f7952eb6c17096a561494c91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a01af83db48dd58eace0d74df1cd5aa = $(`<div id="html_1a01af83db48dd58eace0d74df1cd5aa" style="width: 100.0%; height: 100.0%;">İktisadi ve İdari Bilimler Fakültesi</div>`)[0];
+                popup_3ef2a8a4f7952eb6c17096a561494c91.setContent(html_1a01af83db48dd58eace0d74df1cd5aa);
+            
+        
+
+        marker_8fd8a838b02c52a3428996c7f34ee70b.bindPopup(popup_3ef2a8a4f7952eb6c17096a561494c91)
+        ;
+
+        
+    
+    
+                marker_8fd8a838b02c52a3428996c7f34ee70b.setIcon(icon_c7ac0cdd0d553e0813032811ab79c7ce);
+            
+    
+            var marker_aede76a339752356e8795afddd070b9b = L.marker(
+                [37.8268656, 30.5264542],
+                {
+}
+            ).addTo(map_68149b1616eb140b5cbe0518aacb234f);
+        
+    
+            var icon_5cea7a13edddce6c78d8913bf51ba167 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9d67967c9337a0526d37cb65204cdc1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a8d121e4b82fd0c4f823774225d00cb = $(`<div id="html_1a8d121e4b82fd0c4f823774225d00cb" style="width: 100.0%; height: 100.0%;">KYK Öğrenci Yurdu</div>`)[0];
+                popup_f9d67967c9337a0526d37cb65204cdc1.setContent(html_1a8d121e4b82fd0c4f823774225d00cb);
+            
+        
+
+        marker_aede76a339752356e8795afddd070b9b.bindPopup(popup_f9d67967c9337a0526d37cb65204cdc1)
+        ;
+
+        
+    
+    
+                marker_aede76a339752356e8795afddd070b9b.setIcon(icon_5cea7a13edddce6c78d8913bf51ba167);
+            
+    
+            var marker_0ad1b56374a7bebaa0136e801cd0d1b4 = L.marker(
+                [37.8292005, 30.5263249],
+                {
+}
+            ).addTo(map_68149b1616eb140b5cbe0518aacb234f);
+        
+    
+            var icon_b8d391b47e8336ba58fcd4891e3818ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01fef5597dffc845b0d458178061b90f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_647a78cde9159893e27c8a08049e4832 = $(`<div id="html_647a78cde9159893e27c8a08049e4832" style="width: 100.0%; height: 100.0%;">🚩 Başlangıç: SDÜ Doğu Kampüs Girişi</div>`)[0];
+                popup_01fef5597dffc845b0d458178061b90f.setContent(html_647a78cde9159893e27c8a08049e4832);
+            
+        
+
+        marker_0ad1b56374a7bebaa0136e801cd0d1b4.bindPopup(popup_01fef5597dffc845b0d458178061b90f)
+        ;
+
+        
+    
+    
+                marker_0ad1b56374a7bebaa0136e801cd0d1b4.setIcon(icon_b8d391b47e8336ba58fcd4891e3818ee);
+            
+    
+            ant_path_a7cdb0471b7c4373604371500d9617c7 = L.polyline.antPath(
+              [[37.8292005, 30.5263249], [37.8296451, 30.5249068], [37.8268656, 30.5264542], [37.8254704, 30.528723], [37.8280138, 30.5336276], [37.827382, 30.54023269999999], [37.8321242, 30.5377543], [37.8322874, 30.532964], [37.8302785, 30.5328373], [37.8286752, 30.5318182], [37.8292005, 30.5263249]],
+              {
+  "stroke": true,
+  "color": "blue",
+  "weight": 5,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_68149b1616eb140b5cbe0518aacb234f);
+        
+</script>
+</html>
